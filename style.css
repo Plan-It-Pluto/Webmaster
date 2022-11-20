@@ -22,6 +22,9 @@ header img {
 }
 
 .nav-image {
+    transition-property: width, height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
     height: 40%;
     width: 40%;
     padding: 0;
@@ -70,6 +73,8 @@ header img {
 
   .navbar img:hover {
     opacity: 0.6;
+    width: 120px;
+    height: 120px;
   }
 
   /* .missiontitle h3 {
@@ -81,9 +86,7 @@ header img {
     display: grid;
   } */
 
-  .mission {
-    transition: all 0.3s ease-in-out;
-  }
+ 
 
   .mission p{
     position:relative;
@@ -150,16 +153,11 @@ header img {
     text-align: center;
   }
 
-  .todd {
-    width:100px;
-    height:100px;
-    position: absolute;
-    left: 78%;
-    top: 75%;
-
-  }
 
   .star {
+    transition-property: width, height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
     width:300px;
     height:300px;
     position: absolute;
@@ -167,6 +165,28 @@ header img {
     top: 40%;
 
   }
+
+  .star:hover {
+    width: 350px;
+    height: 350px;
+
+  }
+
+.todd {
+    transition-property: top;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    width:120px;
+    height:120px;
+    position: absolute;
+    left: 78%;
+    top: 75%;
+}
+
+.todd:hover {
+  top: 70%;
+
+}
 
 .shopping-cart {
   width: 80px;
@@ -180,3 +200,51 @@ header img {
   opacity: .7;
 }
 
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }}
+
+  body {
+   animation: fadeInAnimation ease 3s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+    }
+  
+    @keyframes fadeInAnimation {
+    0% {
+   opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+
+    .mission, .sales {
+      opacity: 0;
+      transform: translateY(20vh);
+      visibility: hidden;
+      transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+      will-change: opacity, visibility;
+    }
+    .mission, .sales.is-visible {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+    }
+
+    
