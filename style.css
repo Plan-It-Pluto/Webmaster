@@ -15,6 +15,8 @@ body {
     overflow: auto;
   }
 
+
+
 header img {
     text-align: left;
 }
@@ -27,10 +29,18 @@ header img {
 
 }
 
+.nav-image2 {
+  height: 40%;
+  width: 80%;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
   .navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
+    text-align: center;
     list-style: none;
     align-items: center;
     align-content: center;
@@ -94,7 +104,7 @@ header img {
     margin-bottom: 0;
     font-family: Impact;
     text-align: center;
-    top: -260px;
+    top: -295px;
     font-weight:lighter;
 
   }
@@ -130,19 +140,12 @@ header img {
 
   }
 
-  footer {
-    background-color: #4c1e4f;
-    height: 5%;
-    width: 100%;
-    position: relative;
-  }
-
   .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: #4c1e4f;;
     color: white;
     text-align: center;
   }
@@ -150,9 +153,30 @@ header img {
   .todd {
     width:100px;
     height:100px;
-    position: relative;
-    left: 10px;
-    top: 640px;
+    position: absolute;
+    left: 78%;
+    top: 75%;
 
   }
+
+  .star {
+    width:300px;
+    height:300px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+
+  }
+
+.shopping-cart {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 93.5%;
+  top: 2.5%;
+}
+
+.shopping-cart:hover {
+  opacity: .7;
+}
 

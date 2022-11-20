@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name":"Open index.html",
-            "file": "c:/Users/rishitharavi/code/Webmaster/Webmaster/index.htm"
+            "file": "${workspaceFolder}/index.htm"
         },
     ]
 }
