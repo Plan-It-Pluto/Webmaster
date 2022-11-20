@@ -16,15 +16,11 @@ body {
   }
 
 
-
 header img {
     text-align: left;
 }
 
 .nav-image {
-    transition-property: width, height;
-    transition-duration: .5s;
-    transition-timing-function: ease-in-out;
     height: 40%;
     width: 40%;
     padding: 0;
@@ -73,8 +69,6 @@ header img {
 
   .navbar img:hover {
     opacity: 0.6;
-    width: 120px;
-    height: 120px;
   }
 
   /* .missiontitle h3 {
@@ -219,32 +213,6 @@ header img {
     transform: rotate(360deg);
   }}
 
-  body {
-   animation: fadeInAnimation ease 3s;
-   animation-iteration-count: 1;
-   animation-fill-mode: forwards;
-    }
-  
-    @keyframes fadeInAnimation {
-    0% {
-   opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-    }
 
-    .mission, .sales {
-      opacity: 0;
-      transform: translateY(20vh);
-      visibility: hidden;
-      transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-      will-change: opacity, visibility;
-    }
-    .mission, .sales.is-visible {
-      opacity: 1;
-      transform: none;
-      visibility: visible;
-    }
 
-    
+   
