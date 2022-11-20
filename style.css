@@ -4,8 +4,8 @@ body, html {
 
 
 body {
-    background-image: url("assets/bg.png");
-    /*background-color: #cccccc; */
+    background-image: url("assets/alt-bg9.png");
+    /* background-repeat: no-repeat; */
    }
 
 .navbar {
@@ -19,25 +19,35 @@ header img {
     text-align: left;
 }
 
-
-
 .nav-image {
-    height: 5%;
-    width: 5%;
+    height: 40%;
+    width: 40%;
     padding: 0;
     margin-bottom: 10px;
+
 }
 
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+  }
+
+
   .navbar li {
-    float: right;
+    float: left;
   }
 
   .navbar li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: justify;
     padding: 14px 14px;
     text-decoration: none;
+    font-family:Impact;
   }
 
   .navbar li a img {
@@ -46,5 +56,93 @@ header img {
 
   .navbar li a:hover {
     color: #9E788F;
+  }
+
+  .navbar img:hover {
+    opacity: 0.6;
+  }
+
+  /* .missiontitle h3 {
+    background-color: #f19336;
+    padding: 10px;
+  } */
+
+  /* .mission {
+    display: grid;
+  } */
+
+  .mission {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mission p{
+    position:relative;
+    background-color: #efaa66;
+    color:black;
+    width: 66%;
+    padding: 50px;
+    font-family: 'Changa';
+    margin-top:0;
+  }
+
+  .mission h3 {
+    position: relative;
+    background-color: #f19336;
+    padding: 10px;
+    width:15%;
+    height:60%;
+    margin-bottom: 0;
+    font-family: Impact;
+    text-align: center;
+    top: -260px;
+    font-weight:lighter;
+
+  }
+
+  /* .emptyinside {
+    padding:10px;
+  } */
+
+  .sales,.salestitle {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sales p{
+    position:relative;
+    padding:40px;
+    background-color: #eb7831;
+    color:black;
+    height:25%;
+    width:40%;
+    font-family: 'Changa';
+  }
+
+  .salestitle h3 {
+    position: relative;
+    background-color: #ef640d;
+    padding: 10px;
+    width:15%;
+    height:60%;
+    font-family: Impact;
+    text-align: center;
+    top: -275px;
+    font-weight:lighter;
+
+  }
+
+  footer {
+    background-color: #4c1e4f;
+    height: 5%;
+    width: 100%;
+    position: relative;
+  }
+
+  .todd {
+    width:100px;
+    height:100px;
+    position: relative;
+    left: 10px;
+    top: 640px;
+
   }
 
